@@ -8,7 +8,9 @@
 <script type="text/javascript">
 
   pypyjs.ready().then(function() {
+    pypyjs.loadModuleData("numpy").then(()=>{
+      pypyjs.execfile("../ai.py");
+    })
     
-    pypyjs.execfile("../ai.py");
   })
 </script>
